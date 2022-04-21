@@ -8,7 +8,8 @@ Template Name: Speakers
 <?php get_header();?>
 
 <section class="speakers _container">
-    <h2 class=" section__title"><?php the_field('speakers_page_title') ?></h2>
+    <h2 class=" section__title" style="color: <?php the_field('title_page_colors'); ?>">
+        <?php the_field('speakers_page_title') ?></h2>
     <div class="speakers__desc">
         <?php the_field('speakers_page_description') ?>
     </div>

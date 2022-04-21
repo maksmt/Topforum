@@ -1,0 +1,102 @@
+.activities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 23px;
+    .activities__text {
+        color: #323232;
+        font-family: Roboto;
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 30px;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .activities__events {
+        .activities__events-item {
+            display: flex;
+            padding-bottom: 23px;
+            border-bottom: 1px solid #d6d6d6;
+            margin-top: 21px;
+            &:last-child {
+                border-bottom: 0px;
+            }
+        }
+        .item__info {
+            display: flex;
+            flex-direction: column;
+            margin-left: 30px;
+        }
+        .item__img {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // max-width: 360px;
+            .events__sold {
+                position: absolute;
+            }
+        }
+        .item__title {
+            font-family: Roboto;
+            color: #323232;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin-top: 14px;
+        }
+        .item__date {
+            color: #c99c47;
+            font-family: Roboto;
+            font-size: 16px;
+            font-weight: 500;
+            margin-top: 16px;
+        }
+        .item__desc {
+            font-weight: 300;
+            font-family: Roboto;
+            color: #323232;
+            font-size: 15px;
+            margin-top: 16px;
+        }
+        .item__button {
+            width: 120px;
+            height: 38px;
+            margin-top: 20px;
+            background-color: #d4c198;
+            padding: 7px 0 0 27px;
+            margin-top: 26px;
+            .button__link {
+                color: #ffffff;
+                font-family: Roboto;
+                font-size: 13px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+@media (max-width: 768.98px) {
+    .activities__events {
+        .activities__events-item {
+            flex-direction: column;
+            align-items: center;
+            .item__info {
+                margin-left: 0;
+                align-items: center;
+            }
+            .item__desc {
+                text-align: center;
+            }
+        }
+    }
+}
+@media (max-width: 380px) {
+    .activities__events {
+        .activities__events-item {
+            .item__img {
+                .events__img {
+                    width: 310px;
+                }
+            }
+        }
+    }
+}

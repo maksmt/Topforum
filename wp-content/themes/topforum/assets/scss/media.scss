@@ -1,0 +1,107 @@
+.media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 61px;
+    .section__title {
+        padding-top: 35px;
+    }
+    .media__desc {
+        color: #323232;
+        font-family: Roboto;
+        font-size: 17px;
+        font-weight: 300;
+        text-align: center;
+        margin-top: 22px;
+        line-height: 30px;
+    }
+
+    .media__articles {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: -20px;
+        padding-bottom: 33px;
+
+        .media__articles-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 360px;
+            margin: 46px 0 0 30px;
+            &:first-child,
+            &:nth-child(4) {
+                margin-left: 0;
+            }
+            .item__logo {
+                max-width: 360px;
+
+                margin-bottom: 24px;
+            }
+            .item__title {
+                color: #323232;
+                font-family: Roboto;
+                text-align: center;
+                font-weight: 500;
+                text-transform: uppercase;
+                font-size: 17px;
+
+                &:hover {
+                    color: #c99c47;
+                    border-bottom: 1px solid #c99c47;
+                    cursor: pointer;
+                }
+            }
+            .item__desc {
+                margin-top: 12px;
+                font-family: Roboto;
+                font-size: 15px;
+                line-height: 20px;
+                color: #323232;
+                text-align: center;
+                font-weight: 300;
+            }
+        }
+    }
+    .more__button {
+        width: 120px;
+        height: 38px;
+        background-color: #d4c198;
+        padding: 7px 0 0 25px;
+        .more__button-link {
+            color: #ffffff;
+            font-family: Roboto;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: center;
+        }
+    }
+}
+@media (max-width: 1160px) {
+    .media {
+        .media__articles {
+            justify-content: center;
+            .media__articles-item {
+                &:nth-child(4) {
+                    margin-left: 30px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 548px) {
+    .media {
+        .media__articles {
+            .media__articles-item {
+                margin-left: 0;
+            }
+        }
+    }
+    .media {
+        .conference__type {
+            width: 400px;
+        }
+    }
+}

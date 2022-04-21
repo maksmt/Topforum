@@ -1,0 +1,102 @@
+footer {
+    padding-top: 48px;
+    background-color: #323232;
+    padding-bottom: 44px;
+    .footer__menu {
+        .menu__list {
+            .menu__link {
+                color: #ffffff;
+                font-family: Roboto;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 22px;
+            }
+            .parent {
+                color: #c99c47;
+            }
+        }
+    }
+    .item__border {
+        width: 1px;
+        height: 210px;
+        background-color: #474747;
+        margin: 0 45px 0 59px;
+    }
+    .footer__contact {
+        color: #ffffff;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 300;
+        flex: 1 1 auto;
+        .contact__link {
+            color: #c99c47;
+        }
+        .contact__title {
+            margin-top: 18px;
+        }
+        .contact__address {
+            margin-top: 18px;
+        }
+        .contact__number {
+            margin-top: 47px;
+            padding-bottom: 17px;
+        }
+        .contact__email {
+            margin-top: 17px;
+            color: #fff;
+        }
+    }
+    .follow__link {
+        color: #c99c47;
+        font-family: Roboto;
+        font-size: 14px;
+        height: 10px;
+        line-height: 22px;
+        text-align: right;
+        text-transform: uppercase;
+    }
+    .border__line {
+        width: 1171px;
+        height: 1px;
+        background-color: #474747;
+        margin: 20px 0 37px 0;
+    }
+    .footer__copyright {
+        display: flex;
+        .footer__copyright-text {
+            color: #f8f3e9;
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 22px;
+            text-align: left;
+            flex: 1 1 auto;
+        }
+        .copyrigth__service {
+            width: 126px;
+            height: 13px;
+            opacity: 0.3;
+            color: #ffffff;
+            font-family: Roboto;
+            font-size: 13px;
+            font-weight: 300;
+            line-height: 17px;
+            text-align: right;
+            margin-right: 9px;
+        }
+        .copyright__ico {
+            margin-top: -5px;
+        }
+    }
+}
+@media (max-width: 992.98px) {
+    footer {
+        padding: 48px 20px 44px 20px;
+    }
+}
+@media (max-width: 564.98px) {
+    .copyright__ico {
+        width: 94px;
+        height: 30px;
+    }
+}

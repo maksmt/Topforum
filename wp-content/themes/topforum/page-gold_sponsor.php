@@ -7,7 +7,8 @@
 
 
 <section class="activities _container">
-    <h2 class="section__title"><?php the_field('activities_page_title') ?></h2>
+    <h2 class="section__title" style="color: <?php the_field('title_page_colors'); ?>">
+        <?php the_field('activities_page_title') ?></h2>
     <div class="activities__text">
         <?php the_field('activities_page_description') ?>
     </div>

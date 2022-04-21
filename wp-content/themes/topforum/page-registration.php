@@ -7,7 +7,7 @@ Template Name: Registration
 <?php get_header();?>
 
 <section class="registration _container">
-    <h2 class="section__title">2 EASY STEPS TO REGISTER</h2>
+    <h2 class="section__title" style="color: <?php the_field('title_page_colors'); ?>">2 EASY STEPS TO REGISTER</h2>
     <div class="registration__steps">
         <div class="registration__steps-item">
             <div class="item__text">

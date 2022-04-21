@@ -9,7 +9,8 @@ Template Post Type: post, sponsors
 get_header();
 ?>
 <section class="detail _container">
-    <h2 class=" section__title"><?php the_field('name_of_sponsor')?></h2>
+    <h2 class=" section__title" style="color: <?php the_field('title_page_colors'); ?>">
+        <?php the_field('name_of_sponsor')?></h2>
 
     <div class="detail__text text1">
         <?php the_field('text_under_title_page') ?>

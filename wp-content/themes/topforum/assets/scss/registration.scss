@@ -1,0 +1,290 @@
+.registration {
+    max-width: 675px;
+    padding-bottom: 43px;
+    .section__title {
+        margin: 35px 0 39px 0;
+    }
+    .registration__steps {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .registration__steps-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 414px;
+            height: 58px;
+            border: 2px solid #c99c47;
+            background-color: #ffffff;
+            &:hover {
+                background-color: #c99c47;
+                color: #ffffff;
+                .item__text {
+                    color: #ffffff;
+                }
+            }
+            .item__text {
+                color: #c99c47;
+                font-family: Roboto;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 24px;
+                text-align: center;
+                text-transform: uppercase;
+            }
+        }
+        .item__arrow {
+            margin: 8px 0 8px 0;
+        }
+    }
+    .registration__form {
+        .sponsors__conference-title {
+            color: #323232;
+            font-family: Roboto;
+            font-size: 17px;
+            margin-top: 40px;
+            font-weight: 500;
+            line-height: 24px;
+            text-transform: uppercase;
+        }
+        .form__select {
+            display: block !important;
+        }
+        .select__item {
+            display: none;
+        }
+        .form__select {
+            appearance: none;
+
+            background: url("../img/icons/arrow.png") no-repeat;
+            background-position: right;
+            width: 427px;
+            height: 50px;
+            padding: 0px 14px 0 18px;
+            border: 1px solid #e8d8b6;
+            background-color: #ffffff;
+            color: #606060;
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 24px;
+            text-align: left;
+        }
+        .option {
+            display: flex;
+            gap: 3px;
+            .option__input {
+                display: none;
+                position: relative;
+            }
+
+            .option__label {
+                font-size: 14px;
+                font-weight: 500;
+                font-family: Roboto;
+                position: relative;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                &::before {
+                    content: "";
+                    display: inline-flex;
+                    width: 119px;
+                    height: 50px;
+                    background-color: #f2ead8;
+                }
+                &::after {
+                    transition: all 0.5s ease 0s;
+                    content: "";
+                    width: 119px;
+                    height: 50px;
+                    background-color: #e2cc9d;
+                    position: absolute;
+                    left: 0;
+                    transform: scale(0);
+                }
+                span {
+                    position: absolute;
+                    z-index: 2;
+                    color: #323232;
+                    font-family: Roboto;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 16px;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+                img {
+                    position: absolute;
+                    z-index: 2;
+                }
+            }
+            .option__input:checked + .option__label::after {
+                transform: scale(1);
+            }
+        }
+        .form__body {
+            margin-top: 34px;
+            .form__item {
+                display: flex;
+                justify-content: space-between;
+                max-width: 655px;
+                align-items: center;
+                margin: 11px 0 11px 0;
+
+                .form__input {
+                    width: 427px;
+                    height: 50px;
+                    border: 1px solid #e8d8b6;
+                    background-color: #ffffff;
+                    padding-left: 10px;
+                }
+                .form__label {
+                    display: flex;
+                    justify-content: start;
+                    width: 52px;
+                    height: 13px;
+                    color: #606060;
+                    font-family: Roboto;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 24px;
+                    text-align: left;
+                    flex: 1 1 auto;
+                }
+                .payment__label {
+                    &::before {
+                        content: "";
+                        width: 105px;
+                    }
+                    &::after {
+                        content: "";
+                        width: 105px;
+                    }
+                }
+            }
+            .form__submit {
+                display: flex;
+                justify-content: end;
+                margin-top: 38px;
+                .form__button {
+                    padding: 13px 35px 13px 35px;
+                    background-color: #c99c47;
+                    font-family: Roboto;
+                    font-size: 13px;
+                    display: flex;
+                    align-items: end;
+                    color: #ffffff;
+                    margin-left: 115px;
+                }
+                .checkbox__input {
+                    display: none;
+                }
+                .checkbox__input:checked + .checkbox__label::after {
+                    transform: scale(1);
+                }
+                .checkbox__label {
+                    display: inline-flex;
+                    flex-direction: row;
+                    position: relative;
+                    &::before {
+                        cursor: pointer;
+                        content: "";
+                        width: 24px;
+                        height: 24px;
+                        border: 1px solid #e8d8b6;
+                        background-color: #ffffff;
+                    }
+                    span {
+                        color: #606060;
+                        font-family: Roboto;
+                        font-size: 14px;
+                        font-weight: 300;
+                        line-height: 24px;
+                        text-align: left;
+                        margin-left: 9px;
+                    }
+                    a {
+                        span {
+                            border-bottom: 1px solid #606060;
+                            margin-left: 0;
+                        }
+                        display: contents;
+                        color: #606060;
+                    }
+                    &::after {
+                        transition: all 0.5s ease 0s;
+                        cursor: pointer;
+                        content: "";
+                        width: 16px;
+                        height: 16px;
+                        position: absolute;
+                        left: 4px;
+                        top: 4px;
+                        background-color: #e8d8b6;
+                        transform: scale(0);
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768.98px) {
+    .registration {
+        .registration__form {
+            .form__body {
+                .form__submit {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    .form__button {
+                        margin-left: 0;
+                    }
+                }
+                .form__item {
+                    .form__label {
+                        justify-content: center;
+                        white-space: nowrap;
+                    }
+                    .form__input {
+                        margin-top: 10px;
+                    }
+
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 480px) {
+    .registration {
+        .registration__steps {
+            .registration__steps-item {
+                width: 300px;
+            }
+        }
+        .registration__form {
+            .form__select {
+                width: 300px;
+                margin-top: 10px;
+                .select__item {
+                }
+            }
+            .form__body {
+                .form__item {
+                    .form__input {
+                        width: 300px;
+                    }
+                    .option__item {
+                        .option__label {
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

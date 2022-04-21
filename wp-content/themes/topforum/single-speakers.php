@@ -10,7 +10,8 @@ get_header();
 ?>
 
 <section class="detail-speaker _container">
-    <h2 class=" section__title"><?php the_field('name_of_speaker') ?></h2>
+    <h2 class=" section__title" style="color: <?php the_field('title_page_colors'); ?>">
+        <?php the_field('name_of_speaker') ?></h2>
 
     <div class="detail-speaker__text text1">
         <?php the_field('text_under_title_page') ?>
